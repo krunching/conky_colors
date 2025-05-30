@@ -178,7 +178,7 @@ void conkyrc_sls () {
 	fprintf(fp,"${goto 65}%s: ${font ubuntu:style=bold:size=8}${color2}${totaldown eth0}${color}${font}\n", total);
 	fprintf(fp,"${goto 65}%s: ${color2}${addr eth0}${color}\n", localip);
 	fprintf(fp,"# |--ENP2S0\n");
-	fprintf(fp,"${else}${if_up enp2s0}\n");
+	fprintf(fp,"${else}${ip link show enp2s0}\n");
 	fprintf(fp,"${goto 65}%s: ${font ubuntu:style=bold:size=8}${color1}${upspeed enp2s0}${color}${font}\n", up);
 	fprintf(fp,"${goto 65}%s: ${font ubuntu:style=bold:size=8}${color2}${totalup enp2s0}${color}${font}\n", total);
 	fprintf(fp,"${goto 65}%s: ${font ubuntu:style=bold:size=8}${color1}${downspeed enp2s0}${color}${font}\n", down);
