@@ -284,6 +284,8 @@ int options (int argc, char *argv[]) {
 			set_wireless = True;
 		else OPTION_WITH_VALUE("--eth", key)
 			eth = atoi(value);
+		else OPTION_WITH_VALUE("--enp2s", key)
+			enp2s = atoi(value);
 		else OPTION_WITH_VALUE("--wlan", key)
 			wlan = atoi(value);
 		else OPTION_WITH_VALUE("--ppp", key)
