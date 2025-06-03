@@ -147,5 +147,5 @@ ${goto 32}Local IP: ${color2}${addr enp2s0}${color}
 # - PHOTO - #
 #############
 # For a working photo widget you need to specify a file or directory in conkyPhoto or conkyPhotoRandom script in  /home/mkrause/.conkycolors/bin /usr/share/conkycolors/bin folders
-${voffset 4}${font Liberation Sans:style=Bold:size=8}PHOTO $stippled_hr${font}
-${execi 10800 /home/mkrause/.conkycolors/bin/conkyPhoto}${image /tmp/conkyPhoto.png -s 174x110 -p 4,178}${voffset 98}
+#${voffset 4}${font Liberation Sans:style=Bold:size=8}PHOTO $stippled_hr${font}
+#${execi 10800 /home/mkrause/.conkycolors/bin/conkyPhoto}${image /tmp/conkyPhoto.png -s 174x110 -p 4,178}${voffset 98}
