@@ -14,7 +14,7 @@ LANG=$(zenity --list \
 	--column="" --column="Option" \
 	TRUE "english" \ FALSE "bulgarian" \ FALSE "deutsch" \ FALSE "estonian" \ FALSE "italian" \ FALSE "polish" \ FALSE "portugese" \ FALSE "russian" \ FALSE "spanish");
 case $LANG in
-	"english") LANG=' --lang=en' ;;
+"english") LANG=' --lang=en' ;;
 "bulgarian") LANG=' --lang=bg' ;;
 "deutsch") LANG='  --lang=de' ;;
 "estonian") LANG='  --lang=et' ;;
@@ -30,8 +30,8 @@ CHOICE2=$(zenity --list \
 	--title="Welcome to Conky-colors configuration script" \
 	--text="Choose Your theme" \
 	--radiolist \
-	--column="" --column="Option" \
-	TRUE "gnome-human" \ FALSE "gnome-brave" \ FALSE "gnome-carbonite" \ FALSE "gnome-noble" \ FALSE "gnome-tribute" \ FALSE "gnome-wine" \ FALSE "gnome-wise" \ FALSE "shiki-brave" \ FALSE "shiki-human" \ FALSE "shiki-noble" \ FALSE "shiki-wine" \ FALSE "shiki-wise" \ FALSE "shiki-dust" \ FALSE "dust" \ FALSE "radiance" \ FALSE "ambiance" \ FALSE "elementary");
+	--column="" --column="Option" \ 
+	TRUE "human" \ FALSE "brave" \ FALSE "carbonite" \ FALSE "dust" \ FALSE "noble" \ FALSE "tribute" \ FALSE "wine" \ FALSE "wise" \ FALSE "ambiance" \ FALSE "radiance" \ FALSE "elementary" \ FALSE "cyan" \ FALSE "blue" \ FALSE "orange" \ FALSE "red" \ FALSE "green" \ FALSE "purple" \ FALSE "black" \ FALSE "white" \ FALSE "custom");
 check_exit_option
 echo $CHOICE2
 #widgets 1
